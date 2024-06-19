@@ -12,20 +12,23 @@ Ce script Bash permet de convertir récursivement tous les fichiers d'un dossier
 Si `dos2unix` n'est pas déjà installé sur votre système, le script tentera de l'installer automatiquement :
 
 - Pour Linux (Debian/Ubuntu), utilisez :
+```bash
 sudo apt update
 sudo apt install dos2unix -y
-
+```
 - Pour macOS, utilisez Homebrew :
+```bash
 brew install dos2unix
-
+```
 ## Utilisation
 
 1. Assurez-vous que le script est exécutable :
 chmod +x convert_to_unix.sh
 
 2. Exécutez le script en spécifiant le chemin du dossier que vous souhaitez convertir :
+```bash
 ./convert_to_unix.sh <chemin_dossier>
-
+```
 Remplacez `<chemin_dossier>` par le chemin absolu ou relatif du dossier que vous souhaitez convertir.
 
 3. Le script convertira tous les fichiers de ce dossier (et de ses sous-dossiers) au format Unix.
